@@ -278,7 +278,6 @@ data.groupby('Tipo de contagio').size().plot(kind='bar')
 #35. Haga un gráfico de barras del número de contagiados, recuperados y fallecidos por fecha de toda Colombia
 
 data[(data['Recuperado'] == 'Recuperado')].groupby('Fecha de diagnóstico').size().plot(kind='bar')
-
 data[(data['Estado'] == 'Fallecido')].groupby('Fecha de diagnóstico').size().plot(kind='bar')
 
 
